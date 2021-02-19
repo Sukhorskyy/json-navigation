@@ -48,6 +48,7 @@ def is_dict(data):
     print('1. Get length of dictionary')
     print('2. Get keys of dictionary')
     print('3. Get the value of key by printing its name')
+    print('4. Get the whole content of dictionary')
     print('0. Exit')
     while True:
         action = input('Your choise: ')
@@ -58,6 +59,8 @@ def is_dict(data):
         elif action == '3':
             el_name = input('Input the key: ')
             pprint.pprint(data[el_name])
+        elif action == '4':
+            pprint.pprint(data)
         elif action == '0':
             break
         else:
